@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({money}) {
     
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -20,7 +20,7 @@ function Navbar() {
         
        
       </ul>
-      <button className="btn btn-primary" disabled={true}>Balance: 10,000</button>
+      <button className="btn btn-primary" disabled={true}>Balance: {money}</button>
     </div>
   </div>
 </nav>
